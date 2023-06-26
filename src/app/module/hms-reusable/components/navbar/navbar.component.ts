@@ -7,9 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
+  visible: boolean = false;
+  loginOption: boolean = false;
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  openSignup = () => {
+    this.visible = true;
+  }
+
+  openLogin = () => {
+    this.loginOption = true;
+  }
 }
