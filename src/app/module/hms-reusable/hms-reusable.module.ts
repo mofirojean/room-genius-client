@@ -14,6 +14,10 @@ import { HmsSharedModule } from '../hms-shared/hms-shared.module';
   imports: [
     CommonModule,
     HmsSharedModule
+  ],
+  exports: [
+    NavbarComponent,
+    FooterComponent
   ]
 })
 export class HmsReusableModule { }

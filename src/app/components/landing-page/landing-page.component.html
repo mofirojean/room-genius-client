@@ -1,1 +1,48 @@
-<p>landing-page works!</p>
+<div class="landing-page-wrapper flex flex-column gap-2">
+    <app-navbar></app-navbar>
+    <div class=" hero-section">
+      <div class="dark"></div>
+      <div class="hero-content">
+        <div class="hero">Book Your Stay With Room Genius</div>
+        <div class="body">Find The Perfect Hotel For Your Next Trip</div>
+        <div class="book_button">
+          <button class="book_btn">Book Now</button>
+        </div>
+      </div>
+    </div>
+    <div class="booking-form">
+      <form class="booking">
+        <div class="form_control">
+          <label for="checkin" class="form_label">Check-In</label>
+          <p-calendar placeholder="__/__/____" id="checkin" [readonlyInput]="true" formControlName="checkin"></p-calendar>
+        </div>
+        <hr>
+        <div class="form_control">
+          <label for="checkout" class="form_label">Check-Out</label>
+          <p-calendar placeholder="__/__/____" id="checkout" [readonlyInput]="true" formControlName="checkout"></p-calendar>
+        </div>
+        <hr>
+        <div class="form_control">
+          <label for="guest" class="form_label">Guests</label>
+          <p-inputNumber placeholder="Number of guest" id="guest" inputId="integeronly" formControlName="guestNum"></p-inputNumber>
+        </div>
+        <div class="form_button">
+          <button class="button">Book Now</button>
+        </div>
+      </form>
+    </div>
+    <!-- available rooms -->
+    <div class="header text-center py-2 fw-bold fs-5 mt-3">Our Rooms</div>
+    <div class="hotel-cards container">
+      <div class="hotel-card" *ngFor="let room of hotel_rooms">
+        <div class="hotel-image">
+          <img [src]="room.image" alt="hotel bed">
+        </div>
+        <div class="hotel-card-info">
+          <div class="hotel-card-title">{{room.room_type}}</div>
+          <div class="hotel-card-description">{{room.description}}</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
