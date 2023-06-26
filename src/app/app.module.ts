@@ -8,6 +8,7 @@ import { MessageService } from 'primeng/api';
 import { HmsSharedModule } from './module/hms-shared/hms-shared.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { HmsReusableModule } from './module/hms-reusable/hms-reusable.module';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HmsSharedModule
+    HmsSharedModule,
+    HmsReusableModule
   ],
   providers: [MessageService],
   bootstrap: [AppComponent]
