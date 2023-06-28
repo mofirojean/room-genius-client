@@ -9,12 +9,14 @@ import { HmsSharedModule } from './module/hms-shared/hms-shared.module';
 import { LandingPageComponent } from './components/landing-page/landing-page.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HmsReusableModule } from './module/hms-reusable/hms-reusable.module';
+import { BookingComponent } from './components/booking/booking.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LandingPageComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    BookingComponent
   ],
   imports: [
     BrowserModule,
