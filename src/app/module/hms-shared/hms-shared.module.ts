@@ -5,6 +5,7 @@ import { CalendarModule } from 'primeng/calendar';
 import { InputNumberModule } from 'primeng/inputnumber';
 import { DialogModule } from 'primeng/dialog';
 import { InputTextModule } from 'primeng/inputtext';
+import { CarouselModule } from 'primeng/carousel';
 
 
 @NgModule({
@@ -15,14 +16,16 @@ import { InputTextModule } from 'primeng/inputtext';
     CalendarModule,
     InputNumberModule,
     DialogModule,
-    InputTextModule
+    InputTextModule,
+    CarouselModule
   ],
   exports: [
     ToastModule,
     CalendarModule,
     InputNumberModule,
     DialogModule,
-    InputTextModule
+    InputTextModule,
+    CarouselModule
   ]
 })
 export class HmsSharedModule { }

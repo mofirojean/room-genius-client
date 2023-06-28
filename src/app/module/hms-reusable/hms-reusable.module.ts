@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HmsSharedModule } from '../hms-shared/hms-shared.module';
+import { RouterModule } from '@angular/router';
+
 
 
 
@@ -13,7 +15,8 @@ import { HmsSharedModule } from '../hms-shared/hms-shared.module';
   ],
   imports: [
     CommonModule,
-    HmsSharedModule
+    HmsSharedModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
